@@ -22,6 +22,7 @@ function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
     <>
+    hello
       <BrowserRouter>
         {loading ? (
           <Spinner />
