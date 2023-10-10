@@ -5,7 +5,7 @@ import { Row } from "antd";
 import DoctorList from "../components/DoctorList";
 
 const HomePage = () => {
-
+  
   //Use state for doctors list......
   const [doctors, setDoctors] = useState([]);
 
@@ -36,9 +36,9 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className='backimg_1' style={{ minHeight: "100%" }}>
+      <div className='backimg_1' style={{ minHeight: "100%" ,border:"10px solid red"}}>
         {/* <h3 className='text-center'>{'<<<'}Doctors don't just treat illnesses; they heal with their expertise and care{'>>>'}</h3> */}
-        <Row>
+        <Row style={{paddingTop: 30}}>
           {doctors && doctors.map((doctor) => <DoctorList doctor={doctor} />)}
         </Row>
       </div>

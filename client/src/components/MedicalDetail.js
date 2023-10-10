@@ -19,7 +19,7 @@ const MedicalDetail = (props) => {
                 <Divider style={{ borderColor: 'black' }}></Divider>
                 <p style={{ fontSize: 20, color: 'black' }}><b>Location : </b> {location}</p>
                 <Divider style={{ borderColor: 'black' }}></Divider>
-                <h3 className='text-center'><a href={link} target='_blank'><SvgIcon component={FmdGoodIcon} style={{ fontSize: '36px', marginRight: '8px' }} />Google-Map</a></h3>
+                <h3 className='text-center'><a href={link} target='_blank' rel = "noreferrer"><SvgIcon component={FmdGoodIcon} style={{ fontSize: '36px', marginRight: '8px' }} />Google-Map</a></h3>
                 <Divider style={{ borderColor: 'black' }}></Divider>
             </div>
         </Card>
