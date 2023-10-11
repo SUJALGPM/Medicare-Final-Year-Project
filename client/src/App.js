@@ -17,6 +17,7 @@ import Profile from "./pages/doctor/Profile";
 import BookingPage from "./pages/BookingPage";
 import Appointments from "./pages/Appointments";
 import DoctorAppointments from "./pages/doctor/DoctorAppointments";
+import Home from "./components/Home/Home/Home"
 
 function App() {
   const { loading } = useSelector((state) => state.alerts);
@@ -27,6 +28,16 @@ function App() {
           <Spinner />
         ) : (
           <Routes>
+            <Route
+              path="/home"
+              element={
+              <PublicRoute>
+
+                <Home />
+              </PublicRoute>
+            }
+              exact
+            />
             <Route
               path="/apply-doctor"
               element={
